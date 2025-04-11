@@ -1,0 +1,90 @@
+/* ========== Общие настройки ========== */
+
+/* Основной фон приложения (QMainWindow) */
+QMainWindow {
+    background-color: #FFFFFF;
+}
+
+/* ========== GroupBox (контейнеры) ========== */
+QGroupBox {
+    /* Размер и стиль шрифта */
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+
+    /* Тонкая рамка и лёгкая заливка */
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    margin-top: 10px;
+    background-color: #FAFAFA; /* немного светло-серого фона */
+}
+
+QGroupBox::title {
+    /* Размещаем заголовок в верхнем левом углу */
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+
+    /* Отступы и цвет заголовка */
+    margin: 6px 10px;
+    padding: 0 3px;
+    color: #555;
+}
+
+/* ========== Кнопки ========== */
+QPushButton {
+    background-color: #F5F5F5; /* Светлый фон для кнопки */
+    color: #333;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #E8E8E8; /* При наведении чуть темнее */
+}
+
+QPushButton:pressed {
+    background-color: #D8D8D8; /* При нажатии ещё темнее */
+}
+
+/* ========== Поля ввода текста ========== */
+QLineEdit {
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 14px;
+    color: #333;
+    background-color: #FFFFFF;
+}
+
+QLineEdit:focus {
+    border: 1px solid #999; /* Подсветка при фокусе */
+}
+
+/* ========== Текстовая область для предпросмотра ========== */
+QTextEdit {
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 14px;
+    color: #333;
+    background-color: #FFFFFF;
+}
+
+QTextEdit:focus {
+    border: 1px solid #999; /* Подсветка при фокусе */
+}
+
+/* ========== Метки (QLabel) ========== */
+QLabel {
+    color: #333;
+    font-size: 14px;
+}
+
+/* ========== Диалог (QDialog), например "О программе" ========== */
+QDialog {
+    background-color: #FFFFFF;
+}
+
+/* Кнопка "Закрыть" в диалоге также унаследует стиль QPushButton */
